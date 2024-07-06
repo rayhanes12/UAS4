@@ -1,0 +1,19 @@
+.btnBaru {
+    background-color: rgb(43, 171, 226);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btnBaru:hover {
+    background-color: rgb(43, 171, 226);
+    transform: scale(1.05);
+}
