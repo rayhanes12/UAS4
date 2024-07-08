@@ -85,9 +85,4 @@ Route::middleware('guest')->group(function () {
     Route::post('password/reset', [ResetPasswordController::class, 'reset'])->name('password.update');
     Route::get('admin/dashboard', [DashboardController::class,'index'])->name('admin.dashboard.index')->middleware('is_admin');
 
-    Route::get('/test-email', function () {
-        $user = Auth::user(); // Ganti dengan cara Anda mendapatkan pengguna yang sedang login
-        Mail::to($user->email)->send(new VerificationEmail($user)); // Pastikan Anda telah membuat mail class untuk email verifikasi
-        return "Email terkirim";
-    });
 });
